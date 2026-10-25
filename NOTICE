@@ -1,0 +1,9 @@
+Fip website
+
+This repository contains the Fip product landing page and local demonstration recordings.
+Fip is based on the upstream Proma desktop application by ErlichLiu and contributors.
+Upstream project: https://github.com/proma-ai/Proma
+Upstream website and page-layout reference: https://proma.cool/
+
+The upstream AGPL-3.0 license text is preserved in LICENSE.
+The demonstrations show Fip and do not represent upstream commercial services.
