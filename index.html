@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Snap 是连接项目、上下文、工具与知识的桌面 Agent 工作台。带上资料执行任务，看清轨迹与 AI 说明，将下一步留在 Todo，把成果写回 Obsidian。">
   <meta name="theme-color" content="#f7f7f4">
-  <meta name="page-version" content="1.1.0">
+  <meta name="page-version" content="1.1.1">
   <title>Snap — 让上下文，成为行动。</title>
   <link rel="icon" type="image/png" href="assets/brand/snap-logo.png">
   <link rel="preload" href="assets/fonts/inter-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -41,12 +41,12 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
 <figure class="demo hero-demo" data-demo="hero">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>项目 · 会话 · 工作现场</span><span class="window-mark">SNAP</span></div>
       <div class="video-stage">
-        <video id="video-hero" src="assets/videos/agent.mp4?v=1.0.4-clean" preload="metadata" poster="assets/posters/agent.jpg?v=1.0.4-clean" muted loop playsinline aria-label="Snap 桌面工作台：Snap 实机操作录屏" aria-describedby="caption-hero" data-video="agent"></video>
+        <video id="video-hero" src="assets/videos/agent.mp4?v=1.1.1-snap" preload="metadata" poster="assets/posters/agent.jpg?v=1.1.1-snap" muted loop playsinline aria-label="Snap 桌面工作台：Snap 实机操作录屏" aria-describedby="caption-hero" data-video="agent"></video>
         <div class="video-error" role="status" hidden><span>演示片段暂未载入</span><p>请确认 videos 和 posters 文件夹与网页一起保留。</p><button type="button" class="retry-video">重新加载</button></div>
       </div>
       <figcaption id="caption-hero"><span class="record-label"><i aria-hidden="true"></i> Snap 实机录屏<span class="record-caption"> · 从会话到文件，查看一次工作的完整环境。</span></span><span class="demo-actions"><button type="button" class="toggle-video" data-toggle="hero" data-state="paused" aria-controls="video-hero" aria-label="播放Snap 桌面工作台演示" title="播放Snap 桌面工作台演示"><svg class="toggle-play" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="m5 3 8 5-8 5z"/></svg><svg class="toggle-pause" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M5 3v10M11 3v10"/></svg><span class="toggle-video-text">播放</span></button><button type="button" class="expand-video" data-expand="hero" aria-label="放大查看Snap 桌面工作台演示">放大查看 <span aria-hidden="true">↗</span></button></span></figcaption>
     </figure>
-  <p class="hero-footnote">以下演示录制自更名前版本，画面中仍保留旧品牌字样；可暂停或放大查看操作细节。</p>
+  <p class="hero-footnote">以下演示基于更名前版本的真实操作录屏，品牌文字已后期统一为 Snap；可暂停或放大查看细节。</p>
 </section>
 <section class="features" id="features" aria-labelledby="features-title">
   <div class="wrap features-intro"><div><p class="eyebrow">ONE WORKSPACE, CONTINUOUS WORK</p><h2 class="section-heading" id="features-title">从眼前的资料，<br>到真正完成的工作。</h2></div><p class="editorial">依据放在一起，过程看得清楚。<br>每次工作的结果，都能成为下一次的起点。</p></div>
@@ -60,7 +60,7 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
 <figure class="demo" data-demo="context">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>上下文</span><span class="window-mark">SNAP</span></div>
       <div class="video-stage">
-        <video id="video-context" data-src="assets/videos/context.mp4?v=1.0.4-clean" preload="none" poster="assets/posters/context.jpg?v=1.0.4-clean" muted loop playsinline aria-label="万物上下文：Snap 实机操作录屏" aria-describedby="caption-context" data-video="context"></video>
+        <video id="video-context" data-src="assets/videos/context.mp4?v=1.1.1-snap" preload="none" poster="assets/posters/context.jpg?v=1.1.1-snap" muted loop playsinline aria-label="万物上下文：Snap 实机操作录屏" aria-describedby="caption-context" data-video="context"></video>
         <div class="video-error" role="status" hidden><span>演示片段暂未载入</span><p>请确认 videos 和 posters 文件夹与网页一起保留。</p><button type="button" class="retry-video">重新加载</button></div>
       </div>
       <figcaption id="caption-context"><span class="record-label"><i aria-hidden="true"></i> Snap 实机录屏<span class="record-caption"> · 在输入框中引用项目文件与已有会话。</span></span><span class="demo-actions"><button type="button" class="toggle-video" data-toggle="context" data-state="paused" aria-controls="video-context" aria-label="播放万物上下文演示" title="播放万物上下文演示"><svg class="toggle-play" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="m5 3 8 5-8 5z"/></svg><svg class="toggle-pause" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M5 3v10M11 3v10"/></svg><span class="toggle-video-text">播放</span></button><button type="button" class="expand-video" data-expand="context" aria-label="放大查看万物上下文演示">放大查看 <span aria-hidden="true">↗</span></button></span></figcaption>
@@ -77,7 +77,7 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
 <figure class="demo" data-demo="trace">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>执行轨迹</span><span class="window-mark">SNAP</span></div>
       <div class="video-stage">
-        <video id="video-trace" data-src="assets/videos/trace.mp4?v=1.0.4-clean" preload="none" poster="assets/posters/trace.jpg?v=1.0.4-clean" muted loop playsinline aria-label="执行轨迹与 AI 说明：Snap 实机操作录屏" aria-describedby="caption-trace" data-video="trace"></video>
+        <video id="video-trace" data-src="assets/videos/trace.mp4?v=1.1.1-snap" preload="none" poster="assets/posters/trace.jpg?v=1.1.1-snap" muted loop playsinline aria-label="执行轨迹与 AI 说明：Snap 实机操作录屏" aria-describedby="caption-trace" data-video="trace"></video>
         <div class="video-error" role="status" hidden><span>演示片段暂未载入</span><p>请确认 videos 和 posters 文件夹与网页一起保留。</p><button type="button" class="retry-video">重新加载</button></div>
       </div>
       <figcaption id="caption-trace"><span class="record-label"><i aria-hidden="true"></i> Snap 实机录屏<span class="record-caption"> · 查看三泳道轨迹、步骤详情与 AI 说明开关。</span></span><span class="demo-actions"><button type="button" class="toggle-video" data-toggle="trace" data-state="paused" aria-controls="video-trace" aria-label="播放执行轨迹与 AI 说明演示" title="播放执行轨迹与 AI 说明演示"><svg class="toggle-play" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="m5 3 8 5-8 5z"/></svg><svg class="toggle-pause" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M5 3v10M11 3v10"/></svg><span class="toggle-video-text">播放</span></button><button type="button" class="expand-video" data-expand="trace" aria-label="放大查看执行轨迹与 AI 说明演示">放大查看 <span aria-hidden="true">↗</span></button></span></figcaption>
@@ -94,7 +94,7 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
 <figure class="demo" data-demo="planning">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>Todo 与日历</span><span class="window-mark">SNAP</span></div>
       <div class="video-stage">
-        <video id="video-planning" data-src="assets/videos/planning.mp4?v=1.0.4-clean" preload="none" poster="assets/posters/planning.jpg?v=1.0.4-clean" muted loop playsinline aria-label="Todo / 日历 / 定时任务：Snap 实机操作录屏" aria-describedby="caption-planning" data-video="planning"></video>
+        <video id="video-planning" data-src="assets/videos/planning.mp4?v=1.1.1-snap" preload="none" poster="assets/posters/planning.jpg?v=1.1.1-snap" muted loop playsinline aria-label="Todo / 日历 / 定时任务：Snap 实机操作录屏" aria-describedby="caption-planning" data-video="planning"></video>
         <div class="video-error" role="status" hidden><span>演示片段暂未载入</span><p>请确认 videos 和 posters 文件夹与网页一起保留。</p><button type="button" class="retry-video">重新加载</button></div>
       </div>
       <figcaption id="caption-planning"><span class="record-label"><i aria-hidden="true"></i> Snap 实机录屏<span class="record-caption"> · 查看 Todo、日历与定时任务的工作入口。</span></span><span class="demo-actions"><button type="button" class="toggle-video" data-toggle="planning" data-state="paused" aria-controls="video-planning" aria-label="播放Todo / 日历 / 定时任务演示" title="播放Todo / 日历 / 定时任务演示"><svg class="toggle-play" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="m5 3 8 5-8 5z"/></svg><svg class="toggle-pause" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M5 3v10M11 3v10"/></svg><span class="toggle-video-text">播放</span></button><button type="button" class="expand-video" data-expand="planning" aria-label="放大查看Todo / 日历 / 定时任务演示">放大查看 <span aria-hidden="true">↗</span></button></span></figcaption>
@@ -111,7 +111,7 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
 <figure class="demo" data-demo="obsidian">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>Obsidian</span><span class="window-mark">SNAP</span></div>
       <div class="video-stage">
-        <video id="video-obsidian" data-src="assets/videos/obsidian.mp4?v=1.0.4-clean" preload="none" poster="assets/posters/obsidian.jpg?v=1.0.4-clean" muted loop playsinline aria-label="Obsidian：Snap 实机操作录屏" aria-describedby="caption-obsidian" data-video="obsidian"></video>
+        <video id="video-obsidian" data-src="assets/videos/obsidian.mp4?v=1.1.1-snap" preload="none" poster="assets/posters/obsidian.jpg?v=1.1.1-snap" muted loop playsinline aria-label="Obsidian：Snap 实机操作录屏" aria-describedby="caption-obsidian" data-video="obsidian"></video>
         <div class="video-error" role="status" hidden><span>演示片段暂未载入</span><p>请确认 videos 和 posters 文件夹与网页一起保留。</p><button type="button" class="retry-video">重新加载</button></div>
       </div>
       <figcaption id="caption-obsidian"><span class="record-label"><i aria-hidden="true"></i> Snap 实机录屏<span class="record-caption"> · 浏览 Vault 与 Markdown 笔记，查看原文件编辑方式。</span></span><span class="demo-actions"><button type="button" class="toggle-video" data-toggle="obsidian" data-state="paused" aria-controls="video-obsidian" aria-label="播放Obsidian演示" title="播放Obsidian演示"><svg class="toggle-play" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="m5 3 8 5-8 5z"/></svg><svg class="toggle-pause" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M5 3v10M11 3v10"/></svg><span class="toggle-video-text">播放</span></button><button type="button" class="expand-video" data-expand="obsidian" aria-label="放大查看Obsidian演示">放大查看 <span aria-hidden="true">↗</span></button></span></figcaption>
@@ -126,7 +126,7 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
 <figure class="demo" data-demo="agent">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>Agent</span><span class="window-mark">SNAP</span></div>
       <div class="video-stage">
-        <video id="video-agent" data-src="assets/videos/agent.mp4?v=1.0.4-clean" preload="none" poster="assets/posters/agent.jpg?v=1.0.4-clean" muted loop playsinline aria-label="Agent 能力：Snap 实机操作录屏" aria-describedby="caption-agent" data-video="agent"></video>
+        <video id="video-agent" data-src="assets/videos/agent.mp4?v=1.1.1-snap" preload="none" poster="assets/posters/agent.jpg?v=1.1.1-snap" muted loop playsinline aria-label="Agent 能力：Snap 实机操作录屏" aria-describedby="caption-agent" data-video="agent"></video>
         <div class="video-error" role="status" hidden><span>演示片段暂未载入</span><p>请确认 videos 和 posters 文件夹与网页一起保留。</p><button type="button" class="retry-video">重新加载</button></div>
       </div>
       <figcaption id="caption-agent"><span class="record-label"><i aria-hidden="true"></i> Snap 实机录屏<span class="record-caption"> · 从任务会话查看 Agent 的执行过程与产物。</span></span><span class="demo-actions"><button type="button" class="toggle-video" data-toggle="agent" data-state="paused" aria-controls="video-agent" aria-label="播放Agent 能力演示" title="播放Agent 能力演示"><svg class="toggle-play" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="m5 3 8 5-8 5z"/></svg><svg class="toggle-pause" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M5 3v10M11 3v10"/></svg><span class="toggle-video-text">播放</span></button><button type="button" class="expand-video" data-expand="agent" aria-label="放大查看Agent 能力演示">放大查看 <span aria-hidden="true">↗</span></button></span></figcaption>
@@ -141,7 +141,7 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
 <figure class="demo" data-demo="projects">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>项目</span><span class="window-mark">SNAP</span></div>
       <div class="video-stage">
-        <video id="video-projects" data-src="assets/videos/projects.mp4?v=1.0.4-clean" preload="none" poster="assets/posters/projects.jpg?v=1.0.4-clean" muted loop playsinline aria-label="项目管理：Snap 实机操作录屏" aria-describedby="caption-projects" data-video="projects"></video>
+        <video id="video-projects" data-src="assets/videos/projects.mp4?v=1.1.1-snap" preload="none" poster="assets/posters/projects.jpg?v=1.1.1-snap" muted loop playsinline aria-label="项目管理：Snap 实机操作录屏" aria-describedby="caption-projects" data-video="projects"></video>
         <div class="video-error" role="status" hidden><span>演示片段暂未载入</span><p>请确认 videos 和 posters 文件夹与网页一起保留。</p><button type="button" class="retry-video">重新加载</button></div>
       </div>
       <figcaption id="caption-projects"><span class="record-label"><i aria-hidden="true"></i> Snap 实机录屏<span class="record-caption"> · 浏览项目、会话与对应的本地工作目录。</span></span><span class="demo-actions"><button type="button" class="toggle-video" data-toggle="projects" data-state="paused" aria-controls="video-projects" aria-label="播放项目管理演示" title="播放项目管理演示"><svg class="toggle-play" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="m5 3 8 5-8 5z"/></svg><svg class="toggle-pause" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M5 3v10M11 3v10"/></svg><span class="toggle-video-text">播放</span></button><button type="button" class="expand-video" data-expand="projects" aria-label="放大查看项目管理演示">放大查看 <span aria-hidden="true">↗</span></button></span></figcaption>
@@ -158,7 +158,7 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
 <figure class="demo" data-demo="skills">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>Skills / MCP</span><span class="window-mark">SNAP</span></div>
       <div class="video-stage">
-        <video id="video-skills" data-src="assets/videos/skills.mp4?v=1.0.4-clean" preload="none" poster="assets/posters/skills.jpg?v=1.0.4-clean" muted loop playsinline aria-label="Skills 与 MCP：Snap 实机操作录屏" aria-describedby="caption-skills" data-video="skills"></video>
+        <video id="video-skills" data-src="assets/videos/skills.mp4?v=1.1.1-snap" preload="none" poster="assets/posters/skills.jpg?v=1.1.1-snap" muted loop playsinline aria-label="Skills 与 MCP：Snap 实机操作录屏" aria-describedby="caption-skills" data-video="skills"></video>
         <div class="video-error" role="status" hidden><span>演示片段暂未载入</span><p>请确认 videos 和 posters 文件夹与网页一起保留。</p><button type="button" class="retry-video">重新加载</button></div>
       </div>
       <figcaption id="caption-skills"><span class="record-label"><i aria-hidden="true"></i> Snap 实机录屏<span class="record-caption"> · 浏览项目 Skills 列表，查看 writing-plans 的内容。</span></span><span class="demo-actions"><button type="button" class="toggle-video" data-toggle="skills" data-state="paused" aria-controls="video-skills" aria-label="播放Skills 与 MCP演示" title="播放Skills 与 MCP演示"><svg class="toggle-play" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="m5 3 8 5-8 5z"/></svg><svg class="toggle-pause" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M5 3v10M11 3v10"/></svg><span class="toggle-video-text">播放</span></button><button type="button" class="expand-video" data-expand="skills" aria-label="放大查看Skills 与 MCP演示">放大查看 <span aria-hidden="true">↗</span></button></span></figcaption>
@@ -173,7 +173,7 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
 <figure class="demo" data-demo="memory">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>记忆</span><span class="window-mark">SNAP</span></div>
       <div class="video-stage">
-        <video id="video-memory" data-src="assets/videos/memory.mp4?v=1.0.4-clean" preload="none" poster="assets/posters/memory.jpg?v=1.0.4-clean" muted loop playsinline aria-label="项目记忆：Snap 实机操作录屏" aria-describedby="caption-memory" data-video="memory"></video>
+        <video id="video-memory" data-src="assets/videos/memory.mp4?v=1.1.1-snap" preload="none" poster="assets/posters/memory.jpg?v=1.1.1-snap" muted loop playsinline aria-label="项目记忆：Snap 实机操作录屏" aria-describedby="caption-memory" data-video="memory"></video>
         <div class="video-error" role="status" hidden><span>演示片段暂未载入</span><p>请确认 videos 和 posters 文件夹与网页一起保留。</p><button type="button" class="retry-video">重新加载</button></div>
       </div>
       <figcaption id="caption-memory"><span class="record-label"><i aria-hidden="true"></i> Snap 实机录屏<span class="record-caption"> · 打开项目记忆，查看文件与已有的协作约定。</span></span><span class="demo-actions"><button type="button" class="toggle-video" data-toggle="memory" data-state="paused" aria-controls="video-memory" aria-label="播放项目记忆演示" title="播放项目记忆演示"><svg class="toggle-play" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="m5 3 8 5-8 5z"/></svg><svg class="toggle-pause" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M5 3v10M11 3v10"/></svg><span class="toggle-video-text">播放</span></button><button type="button" class="expand-video" data-expand="memory" aria-label="放大查看项目记忆演示">放大查看 <span aria-hidden="true">↗</span></button></span></figcaption>
@@ -188,7 +188,7 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
 <figure class="demo" data-demo="collaboration">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>子会话</span><span class="window-mark">SNAP</span></div>
       <div class="video-stage">
-        <video id="video-collaboration" data-src="assets/videos/collaboration.mp4?v=1.0.4-clean" preload="none" poster="assets/posters/collaboration.jpg?v=1.0.4-clean" muted loop playsinline aria-label="子会话与主会话：Snap 实机操作录屏" aria-describedby="caption-collaboration" data-video="collaboration"></video>
+        <video id="video-collaboration" data-src="assets/videos/collaboration.mp4?v=1.1.1-snap" preload="none" poster="assets/posters/collaboration.jpg?v=1.1.1-snap" muted loop playsinline aria-label="子会话与主会话：Snap 实机操作录屏" aria-describedby="caption-collaboration" data-video="collaboration"></video>
         <div class="video-error" role="status" hidden><span>演示片段暂未载入</span><p>请确认 videos 和 posters 文件夹与网页一起保留。</p><button type="button" class="retry-video">重新加载</button></div>
       </div>
       <figcaption id="caption-collaboration"><span class="record-label"><i aria-hidden="true"></i> Snap 实机录屏<span class="record-caption"> · 查看主任务中的协作记录与子会话入口。</span></span><span class="demo-actions"><button type="button" class="toggle-video" data-toggle="collaboration" data-state="paused" aria-controls="video-collaboration" aria-label="播放子会话与主会话演示" title="播放子会话与主会话演示"><svg class="toggle-play" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="m5 3 8 5-8 5z"/></svg><svg class="toggle-pause" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M5 3v10M11 3v10"/></svg><span class="toggle-video-text">播放</span></button><button type="button" class="expand-video" data-expand="collaboration" aria-label="放大查看子会话与主会话演示">放大查看 <span aria-hidden="true">↗</span></button></span></figcaption>
@@ -205,7 +205,7 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
 <figure class="demo" data-demo="explore">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>探索</span><span class="window-mark">SNAP</span></div>
       <div class="video-stage">
-        <video id="video-explore" data-src="assets/videos/explore.mp4?v=1.0.4-clean" preload="none" poster="assets/posters/explore.jpg?v=1.0.4-clean" muted loop playsinline aria-label="探索能力：Snap 实机操作录屏" aria-describedby="caption-explore" data-video="explore"></video>
+        <video id="video-explore" data-src="assets/videos/explore.mp4?v=1.1.1-snap" preload="none" poster="assets/posters/explore.jpg?v=1.1.1-snap" muted loop playsinline aria-label="探索能力：Snap 实机操作录屏" aria-describedby="caption-explore" data-video="explore"></video>
         <div class="video-error" role="status" hidden><span>演示片段暂未载入</span><p>请确认 videos 和 posters 文件夹与网页一起保留。</p><button type="button" class="retry-video">重新加载</button></div>
       </div>
       <figcaption id="caption-explore"><span class="record-label"><i aria-hidden="true"></i> Snap 实机录屏<span class="record-caption"> · 查看探索结果，将新增内容引用带回主会话。</span></span><span class="demo-actions"><button type="button" class="toggle-video" data-toggle="explore" data-state="paused" aria-controls="video-explore" aria-label="播放探索能力演示" title="播放探索能力演示"><svg class="toggle-play" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="m5 3 8 5-8 5z"/></svg><svg class="toggle-pause" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M5 3v10M11 3v10"/></svg><span class="toggle-video-text">播放</span></button><button type="button" class="expand-video" data-expand="explore" aria-label="放大查看探索能力演示">放大查看 <span aria-hidden="true">↗</span></button></span></figcaption>
@@ -222,7 +222,7 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
 <figure class="demo" data-demo="coding">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>文件与终端</span><span class="window-mark">SNAP</span></div>
       <div class="video-stage">
-        <video id="video-coding" data-src="assets/videos/coding.mp4?v=1.0.4-clean" preload="none" poster="assets/posters/coding.jpg?v=1.0.4-clean" muted loop playsinline aria-label="文件、改动与终端：Snap 实机操作录屏" aria-describedby="caption-coding" data-video="coding"></video>
+        <video id="video-coding" data-src="assets/videos/coding.mp4?v=1.1.1-snap" preload="none" poster="assets/posters/coding.jpg?v=1.1.1-snap" muted loop playsinline aria-label="文件、改动与终端：Snap 实机操作录屏" aria-describedby="caption-coding" data-video="coding"></video>
         <div class="video-error" role="status" hidden><span>演示片段暂未载入</span><p>请确认 videos 和 posters 文件夹与网页一起保留。</p><button type="button" class="retry-video">重新加载</button></div>
       </div>
       <figcaption id="caption-coding"><span class="record-label"><i aria-hidden="true"></i> Snap 实机录屏<span class="record-caption"> · 在工作台旁切换文件、改动与终端。</span></span><span class="demo-actions"><button type="button" class="toggle-video" data-toggle="coding" data-state="paused" aria-controls="video-coding" aria-label="播放文件、改动与终端演示" title="播放文件、改动与终端演示"><svg class="toggle-play" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="m5 3 8 5-8 5z"/></svg><svg class="toggle-pause" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M5 3v10M11 3v10"/></svg><span class="toggle-video-text">播放</span></button><button type="button" class="expand-video" data-expand="coding" aria-label="放大查看文件、改动与终端演示">放大查看 <span aria-hidden="true">↗</span></button></span></figcaption>
@@ -240,7 +240,7 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
       <details><summary>AI 说明会一直调用模型吗？</summary><p>不会。轨迹里的 AI 说明默认关闭，需要时才开启，并产生额外模型用量。有 Agent 任务运行时，说明请求会排队；成功说明会缓存。它基于公开的任务、操作和结果解释步骤，目的属于推测，原始详情仍可直接核对。</p></details>
       <details><summary>定时任务需要一直开着 Snap 吗？</summary><p>需要。提醒和定时执行依赖本机 Snap 运行；配置好项目、执行内容与时间后，可以从运行记录查看每次任务的结果。</p></details>
       <details><summary>我的笔记和资料放在哪里？</summary><p>项目文件、会话与记忆保存在本机。Obsidian 接入直接使用 Vault 中的 Markdown 原文件，授权后 Agent 可读写相应内容。调用外部模型、MCP 或其他服务时，任务所需内容会发送到相应服务，具体范围取决于任务和配置。</p></details>
-      <details><summary>这些动态演示展示的是什么？</summary><p>动态演示录制自更名前版本的实际界面，展示对应功能的操作与入口。部分等待时间经过剪辑或加速。演示可随时暂停，也可以放大查看细节。</p></details>
+      <details><summary>这些动态演示展示的是什么？</summary><p>动态演示基于更名前版本 0.19.71 的真实操作录屏，发布素材中的品牌文字已后期统一为 Snap。部分等待经过剪辑或加速，业务操作与执行流程保留原录制内容；本次没有重新录制或重跑模型。演示可随时暂停，也可以放大查看细节。</p></details>
     </div>
   </section>
 <section class="closing" aria-labelledby="closing-title"><div class="wrap closing-inner"><div><h2 id="closing-title">下一份工作，<br>从这里继续。</h2><p>一个项目，一份资料，一个明确的目标。</p></div><div class="closing-actions"><a class="button" href="#context">回到功能演示 <span aria-hidden="true">↑</span></a><a class="button button-secondary" href="docs/index.html">阅读产品文档 <span aria-hidden="true">→</span></a></div></div></section>
@@ -251,7 +251,7 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
 <div class="footer-column"><h3>工作台</h3><a href="#agent">Agent 能力</a><a href="#projects">项目管理</a><a href="#skills">Skills 与 MCP</a><a href="#coding">文件与终端</a></div>
 <div class="footer-column"><h3>延续工作</h3><a href="#memory">项目记忆</a><a href="#collaboration">协作子会话</a><a href="#explore">探索分支</a><a href="#start">开始使用</a></div>
 <div class="footer-column"><h3>资料与来源</h3><a href="docs/index.html">产品文档</a><a href="#faq">常见问题</a><a href="https://github.com/shuaishuaisylas/fip-website" target="_blank" rel="noreferrer">网站源码 ↗</a><a href="https://proma.cool/" target="_blank" rel="noreferrer">上游项目官网 ↗</a></div>
-</nav><div class="footer-bottom"><span>基于上游 Proma 构建 · <a href="LICENSE" target="_blank">AGPL-3.0</a> · 演示版本 0.19.71</span><span>Snap · 宣传页 1.1.0 · 2026</span></div></div></footer>
+</nav><div class="footer-bottom"><span>基于上游 Proma 构建 · <a href="LICENSE" target="_blank">AGPL-3.0</a> · 演示版本 0.19.71</span><span>Snap · 宣传页 1.1.1 · 2026</span></div></div></footer>
 <dialog class="video-dialog" id="video-dialog" aria-labelledby="dialog-title">
   <div class="dialog-bar"><h2 class="dialog-title" id="dialog-title">Snap 功能演示</h2><button type="button" class="dialog-close" id="dialog-close" aria-label="关闭演示" autofocus>×</button></div>
   <video id="dialog-video" controls playsinline muted loop aria-label="放大的 Snap 实机演示"></video>
