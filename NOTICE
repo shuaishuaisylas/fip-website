@@ -3,8 +3,11 @@ Snap website
 This repository contains the Snap product landing page and local demonstration recordings.
 Snap is based on the upstream Proma desktop application by ErlichLiu and contributors.
 Upstream project: https://github.com/proma-ai/Proma
-Upstream website and page-layout reference: https://proma.cool/
+Upstream website: https://proma.cool/
+
+Visual design follows the style specification supplied for this Snap website.
+Typography: Inter, distributed under the SIL Open Font License; see assets/fonts/LICENSE-Inter.txt.
+The supplied Snap brand mark is retained as the product identity.
 
 The upstream AGPL-3.0 license text is preserved in LICENSE.
-The demonstrations were recorded before the Snap rename, so the previous product
-brand may remain visible in the footage. They do not represent upstream commercial services.
+The demonstrations show the product before its name changed to Snap.

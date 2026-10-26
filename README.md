@@ -2,16 +2,21 @@
 
 [在线查看](https://shuaishuaisylas.github.io/fip-website/) · [产品功能说明](docs/index.html)
 
-Snap 是围绕项目上下文、工具执行和知识沉淀的桌面 Agent 工作台。网站展示 11 项功能及本机真实操作录屏，重点包括上下文引用、执行轨迹与 AI 说明、Todo 和 Obsidian。
+Snap 是围绕项目上下文、工具执行和知识沉淀的桌面 Agent 工作台。官网以真实操作录屏介绍 11 项能力，重点展示上下文、执行轨迹与 AI 说明、Todo 和 Obsidian。
 
-## 页面与素材
+## 设计与内容
 
-- `index.html`：宣传页面，包含样式与交互脚本。
-- `assets/videos/` 与 `assets/posters/`：11 组演示与封面。演示为静音循环 MP4，内嵌展示隐藏原生控件，并保留暂停与放大入口。
-- `docs/index.html`：公开功能说明。
-- `assets/brand/snap-logo.png`：Snap 品牌图标，用于页头与 favicon。
+页面版本 **1.1.0**。本版按用户提供的设计规范重新设计，采用暖纸色画布、墨色正文、400 字重标题、4px 小圆角与克制的橙色链接强调；以左右交替的产品画面和文字介绍展开功能。Snap 蓝色图标保留原始品牌形状。
 
-页面版本 1.0.5。品牌已更新为 Snap；录屏来自更名前版本，画面中保留旧品牌字样，视频与封面未因更名而重做。录屏此前已清理窗口黑角和左上角操控浮标。分享或移动时请保留相对目录结构。
+- `index.html`：官网页面，内含样式与交互脚本。
+- `assets/videos/` 和 `assets/posters/`：11 组真实操作录屏与封面。
+- `assets/brand/snap-logo.png`：Snap 品牌图标。
+- `assets/fonts/`：本地 Inter 字体及 OFL 许可；中文使用设备字体回退。
+- `docs/index.html`：同风格的公开功能说明。
+
+演示进入可视区域后静音循环，内嵌画面隐藏原生播放器工具栏，提供暂停与放大入口。减少动态效果偏好会阻止自动播放，仍可手动播放。录屏保留更名前的品牌字样，并在页面中说明；此前已清理黑角与左上角操控浮标。
+
+本站只展示产品介绍和本地视频，不启动 Agent、不请求模型，也不读写项目或 Obsidian Vault。
 
 ## 本地预览与发布
 
@@ -21,12 +26,8 @@ Snap 是围绕项目上下文、工具执行和知识沉淀的桌面 Agent 工�
 python3 -m http.server 8000
 ```
 
-GitHub Pages 使用 `main` 分支的仓库根目录 `/`。更新并推送文件后会自动重新发布。
-
-为保持现有链接可用，仓库和 Pages 地址继续使用 `fip-website`；功能锚点和浏览器主题存储键也保持不变。
-
-本站用于产品介绍和演示；页面本身不启动 Agent、不请求模型，也不读写项目或 Obsidian Vault。
+GitHub Pages 使用 `main` 分支的根目录 `/`。推送更新后会自动重新发布。分享或移动页面时请保留 HTML 与 `assets/` 的相对位置。
 
 ## 来源与许可
 
-Snap 基于 [Proma](https://github.com/proma-ai/Proma)，页面节奏参考 [Proma 官网](https://proma.cool/)。原 AGPL-3.0 许可与来源信息保留在 [LICENSE](LICENSE) 和 [NOTICE](NOTICE)。
+Snap 基于 [Proma](https://github.com/proma-ai/Proma)。来源和许可见 [NOTICE](NOTICE)、[LICENSE](LICENSE)；Inter 字体许可见 [OFL](assets/fonts/LICENSE-Inter.txt)。
