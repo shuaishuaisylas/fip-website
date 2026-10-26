@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Snap 是连接项目、上下文、工具与知识的桌面 Agent 工作台。带上资料执行任务，看清轨迹与 AI 说明，将下一步留在 Todo，把成果写回 Obsidian。">
   <meta name="theme-color" content="#f7f7f4">
-  <meta name="page-version" content="1.1.2">
+  <meta name="page-version" content="1.1.3">
   <title>Snap — 让上下文，成为行动。</title>
   <link rel="icon" type="image/png" href="assets/brand/snap-logo.png">
   <link rel="preload" href="assets/fonts/inter-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -15,14 +15,14 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-height) + var(--toc-height) + 20px)}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 var(--sans);-webkit-font-smoothing:antialiased;font-feature-settings:"ss08","ss09","tnum"}::selection{background:#8bc4f8;color:var(--ink)}button,input{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}button{color:inherit;cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}button:focus-visible,a:focus-visible,summary:focus-visible,video:focus-visible{outline:2px solid var(--ink);outline-offset:5px}svg{display:block;width:20px;height:20px;flex-shrink:0}button svg{pointer-events:none}h1,h2,h3,h4,p,figure{margin:0}h1,h2,h3,h4{font-weight:400}img{max-width:100%}[hidden]{display:none!important}.wrap{width:min(var(--width),calc(100% - 64px));margin-inline:auto}.skip-link{position:fixed;top:-90px;left:24px;z-index:100;background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:4px}.skip-link:focus{top:8px}.eyebrow{font:11px/1.6 var(--mono);letter-spacing:.075em;color:var(--muted)}
 .site-header{height:var(--header-height);position:sticky;top:0;z-index:30;background:var(--paper);border-bottom:1px solid transparent}.header-inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:32px}.brand{display:inline-flex;align-items:center;gap:8px;font-size:19px;font-weight:500;line-height:1;letter-spacing:-.02em;flex-shrink:0}.brand-logo{width:28px;height:28px;object-fit:contain;border-radius:4px}.header-nav{display:flex;align-items:center;gap:28px;font-size:14px}.header-nav a,.header-actions>a{white-space:nowrap}.header-nav a:hover{text-decoration:underline;text-underline-offset:5px;text-decoration-color:var(--ember)}.header-actions{display:flex;align-items:center;gap:20px;font-size:13px}.button{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid transparent;border-radius:4px;background:var(--ink);color:var(--paper);padding:11px 19px;font-size:14px;font-weight:400;line-height:1.45;transition:opacity .15s}.button:hover{opacity:.85}.button svg{width:16px;height:16px}.button-secondary{background:var(--linen);color:var(--ink)}.button-small{padding:8px 13px;font-size:13px}.text-link{font-size:14px;text-decoration:underline;text-underline-offset:5px;text-decoration-color:var(--ember)}.text-link:hover{text-decoration-thickness:2px}
 .hero{padding-top:72px}.hero-copy{max-width:1060px;padding-bottom:40px}.hero h1{font-size:clamp(42px,5.1vw,72px);font-weight:400;line-height:1.2;letter-spacing:-.02em;margin-top:20px}.hero h1 span{display:inline-block;color:var(--ember)}.hero-description{font-size:18px;line-height:1.8;max-width:680px;margin-top:24px;color:var(--muted)}.hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:28px}.hero-meta{margin-top:22px;font:11px/1.7 var(--mono);color:var(--muted);letter-spacing:.025em}.demo{width:100%;min-width:0;border:1px solid var(--line);border-radius:4px;background:var(--bone);padding:12px}.hero-demo{padding:20px;box-shadow:0 18px 48px rgba(38,37,30,.055)}.window-bar{height:28px;display:grid;grid-template-columns:70px 1fr 70px;align-items:center;gap:8px;color:var(--muted);font-size:11px;line-height:1;margin-bottom:10px;text-align:center}.window-dots{display:flex;align-items:center;gap:5px}.window-dots i{width:6px;height:6px;border-radius:50%;background:#aaa99f}.window-mark{text-align:right;font:10px/1 var(--mono);letter-spacing:.08em}.video-stage{position:relative;width:100%;aspect-ratio:1458/832;overflow:hidden;border:1px solid var(--line);border-radius:4px;background:var(--bone)}.demo video{display:block;width:100%;height:100%;object-fit:contain;background:var(--bone)}.demo figcaption{min-height:38px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:10px;color:var(--muted);font-size:11px;line-height:1.6}.record-label{display:flex;align-items:center;flex-wrap:wrap;gap:5px}.record-label i{width:4px;height:4px;background:var(--muted);border-radius:50%;flex-shrink:0}.record-caption{display:none}.hero-demo .record-caption{display:inline}.demo-actions{display:inline-flex;align-items:center;gap:15px;flex-shrink:0}.toggle-video,.expand-video{display:inline-flex;align-items:center;justify-content:center;gap:5px;min-width:44px;min-height:32px;padding:5px 0;border:0;border-radius:4px;background:transparent;color:var(--muted);font-size:11px;line-height:1.6;white-space:nowrap}.toggle-video:hover,.expand-video:hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}.toggle-video svg{width:12px;height:12px}.toggle-video .toggle-pause{display:none}.toggle-video[data-state="playing"] .toggle-play{display:none}.toggle-video[data-state="playing"] .toggle-pause{display:block}.video-error{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;background:var(--bone);color:var(--ink);text-align:center;font-size:16px}.video-error p{font-size:13px;color:var(--muted);margin-top:8px}.retry-video{padding:7px 12px;border:1px solid var(--stone);border-radius:4px;background:var(--linen);color:var(--ink);font-size:13px;margin-top:16px}.hero-footnote{color:var(--muted);font-size:12px;line-height:1.7;margin-top:16px}
-.features{padding-top:100px}.features-intro{display:flex;align-items:flex-end;justify-content:space-between;gap:48px;margin-bottom:32px}.section-heading{font-size:36px;line-height:1.35;letter-spacing:-.02em;max-width:630px;margin-top:16px}.features-intro .editorial{max-width:360px;font:18px/1.75 var(--serif);color:var(--muted);padding-bottom:3px}.feature-sidebar{position:sticky;top:var(--header-height);z-index:20;overflow-x:auto;overflow-y:hidden;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);scrollbar-width:none}.feature-sidebar::-webkit-scrollbar{display:none}.feature-toc{display:flex;align-items:center;justify-content:space-between;gap:12px;width:max-content;min-width:100%;height:var(--toc-height)}.feature-toc a{display:block;flex-shrink:0;padding:17px 4px 16px;color:var(--muted);font-size:13px;line-height:21px;white-space:nowrap;border-bottom:2px solid transparent}.feature-toc a:hover{color:var(--ink)}.feature-toc a[aria-current="true"]{color:var(--ink);border-bottom-color:var(--ink)}.feature-content{padding-top:80px}.feature{display:grid;grid-template-columns:minmax(0,.35fr) minmax(0,.65fr);gap:64px;align-items:center;margin-bottom:96px;scroll-margin-top:12px;min-width:0}.feature:last-child{margin-bottom:0}.feature:nth-child(even){grid-template-columns:minmax(0,.65fr) minmax(0,.35fr)}.feature:nth-child(even)>.feature-text{grid-column:2;grid-row:1}.feature:nth-child(even)>.demo{grid-column:1;grid-row:1}.feature-text{min-width:0;padding-block:8px}.feature-number{margin-bottom:20px}.feature h3{font-size:36px;font-weight:400;line-height:1.3;letter-spacing:-.02em}.feature-lead{font-size:18px;line-height:1.65;letter-spacing:-.005em;margin-top:16px;max-width:390px}.feature-copy{margin-top:20px;color:var(--muted);font-size:15px;line-height:1.85}.feature-copy p+p{margin-top:12px}.feature-points{padding:0;margin:20px 0 0;list-style:none;font-size:13px;line-height:1.75;color:var(--muted)}.feature-points li{padding-left:14px;position:relative}.feature-points li+li{margin-top:6px}.feature-points li:before{content:"—";position:absolute;left:0;top:0;font-size:10px}.feature-note{font-size:12px;color:var(--muted);line-height:1.8;margin-top:18px}
+.features{padding-top:100px}.features-intro{display:flex;align-items:flex-end;justify-content:space-between;gap:48px;margin-bottom:32px}.section-heading{font-size:36px;line-height:1.35;letter-spacing:-.02em;max-width:630px;margin-top:16px}.features-intro .editorial{max-width:360px;font:18px/1.75 var(--serif);color:var(--muted);padding-bottom:3px}.feature-sidebar{position:sticky;top:var(--header-height);z-index:20;overflow-x:auto;overflow-y:hidden;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);scrollbar-width:none}.feature-sidebar::-webkit-scrollbar{display:none}.feature-toc{display:flex;align-items:center;justify-content:space-between;gap:12px;width:max-content;min-width:100%;height:var(--toc-height)}.feature-toc a{display:block;flex-shrink:0;padding:17px 4px 16px;color:var(--muted);font-size:13px;line-height:21px;white-space:nowrap;border-bottom:2px solid transparent}.feature-toc a:hover{color:var(--ink)}.feature-toc a[aria-current="true"]{color:var(--ink);border-bottom-color:var(--ink)}.feature-content{padding-top:64px}.feature{display:grid;grid-template-columns:minmax(0,.3fr) minmax(0,.7fr);gap:48px;align-items:center;margin-bottom:80px;scroll-margin-top:12px;min-width:0}.feature:last-child{margin-bottom:0}.feature:nth-child(even){grid-template-columns:minmax(0,.7fr) minmax(0,.3fr)}.feature:nth-child(even)>.feature-text{grid-column:2;grid-row:1}.feature:nth-child(even)>.demo{grid-column:1;grid-row:1}.feature-text{min-width:0;padding-block:8px}.feature h3{font-size:32px;font-weight:400;line-height:1.3;letter-spacing:-.02em}.feature-copy{margin-top:16px;color:var(--muted);font-size:15px;line-height:1.8;max-width:360px}.feature-note{font-size:12px;color:var(--muted);line-height:1.75;margin-top:12px;max-width:360px}
 .start-section{padding-top:104px}.start-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:28px}.start-heading h2{font-size:36px;letter-spacing:-.02em;line-height:1.35;margin-top:16px}.start-heading>p{font:18px/1.7 var(--serif);color:var(--muted);max-width:340px}.getting-started{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.start-step{padding:28px;background:var(--bone);border:1px solid var(--line);border-radius:4px}.step-number{font:11px/1.6 var(--mono);color:var(--muted);letter-spacing:.04em}.start-step h3{font-size:22px;font-weight:400;line-height:1.4;letter-spacing:-.005em;margin-top:36px}.start-step p{font-size:14px;line-height:1.85;margin-top:12px;color:var(--muted)}.faq{padding-top:104px;display:grid;grid-template-columns:minmax(0,.35fr) minmax(0,.65fr);gap:64px}.faq h2{font-size:36px;line-height:1.35;letter-spacing:-.02em;margin-top:16px}.faq-heading>p:last-child{font-size:14px;color:var(--muted);margin-top:20px}.faq-list details{border-bottom:1px solid var(--line)}.faq-list details:first-child{border-top:1px solid var(--line)}.faq-list summary{cursor:pointer;list-style:none;position:relative;padding:20px 34px 20px 0;font-size:16px;line-height:1.7;font-weight:400}.faq-list summary::-webkit-details-marker{display:none}.faq-list summary:after{content:"+";position:absolute;right:0;top:17px;font-size:24px;font-weight:400;line-height:1.4;color:var(--muted)}.faq-list details[open] summary:after{content:"−"}.faq-list details p{font-size:14px;line-height:1.85;color:var(--muted);padding:0 30px 22px 0}.closing{margin-top:104px;background:var(--bone);padding:64px 0}.closing-inner{display:flex;justify-content:space-between;align-items:center;gap:48px}.closing h2{font-size:40px;font-weight:400;line-height:1.35;letter-spacing:-.02em}.closing p{font-size:16px;color:var(--muted);margin-top:16px}.closing-actions{display:flex;gap:12px;flex-wrap:wrap;flex-shrink:0}
 footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-bottom:36px}.footer-intro>p{font:18px/1.7 var(--serif);color:var(--muted)}.footer-columns{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px}.footer-column h3{font-size:14px;font-weight:500;line-height:1.5;margin-bottom:16px}.footer-column a{display:block;width:fit-content;color:var(--muted);font-size:13px;line-height:1.7;margin-top:8px}.footer-column a:hover{text-decoration:underline;text-decoration-color:var(--ember);text-underline-offset:4px}.footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px;margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:11px;line-height:1.8;color:var(--muted)}.footer-bottom a{text-decoration:underline;text-underline-offset:3px}
 .video-dialog{padding:0;width:min(1440px,calc(100vw - 64px));max-width:none;max-height:calc(100dvh - 48px);border:1px solid var(--stone);border-radius:4px;background:var(--bone);color:var(--ink);overflow:auto}.video-dialog::backdrop{background:rgba(38,37,30,.78)}.dialog-bar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 16px;border-bottom:1px solid var(--line)}.dialog-title{font-size:14px;font-weight:400;line-height:1.5}.dialog-close{display:grid;place-items:center;width:36px;height:36px;border:0;border-radius:4px;background:transparent;color:var(--ink);font-size:25px;line-height:1}.dialog-close:hover{background:var(--linen)}.video-dialog video{display:block;width:100%;max-height:calc(100dvh - 150px);object-fit:contain;background:var(--bone)}.dialog-caption{font-size:12px;line-height:1.7;color:var(--muted);padding:12px 16px}.dialog-error{padding:16px;color:var(--muted);font-size:14px}
 @media(min-width:1600px){.hero{padding-top:88px}.hero-copy{padding-bottom:48px}}
-@media(max-width:1100px){.header-nav{gap:20px}.header-actions>.text-link{display:none}.feature{gap:36px}.feature h3{font-size:30px}.feature-lead{font-size:17px}.feature-copy{font-size:14px}.feature-points{font-size:12px}.feature-toc{gap:20px}.hero h1{font-size:60px}.hero-demo .record-caption{display:none}.closing-inner{align-items:flex-start}.closing h2{font-size:34px}.closing-actions{flex-direction:column;align-items:stretch}}
-@media(max-width:900px){.feature,.feature:nth-child(even){grid-template-columns:minmax(0,1fr);gap:28px;align-items:start}.feature:nth-child(even)>.feature-text,.feature:nth-child(even)>.demo{grid-column:auto;grid-row:auto}.feature-text{max-width:740px}.feature h3{font-size:34px}.feature-lead{max-width:none;font-size:18px}.feature-copy{font-size:16px}.feature-points{font-size:14px}.feature-note{font-size:13px}.feature-number{margin-bottom:16px}.features-intro{align-items:flex-start}.features-intro .editorial{max-width:270px;font-size:17px}.section-heading{font-size:32px}.feature-content{padding-top:56px}.feature{margin-bottom:72px}.faq{grid-template-columns:minmax(0,1fr);gap:32px}.faq h2 br{display:none}.faq-heading>p:last-child{margin-top:12px}.start-heading>p{display:none}.start-step{padding:24px}.start-step h3{font-size:20px;margin-top:28px}.closing-inner{display:block}.closing-actions{margin-top:28px;flex-direction:row}.header-nav{gap:18px}.header-actions{gap:0}.hero{padding-top:56px}.hero h1{font-size:56px}.hero-description{font-size:17px}.features{padding-top:80px}.start-section,.faq{padding-top:80px}.closing{margin-top:80px}}
-@media(max-width:620px){:root{--header-height:56px;--toc-height:52px}.wrap{width:calc(100% - 40px)}.header-inner{gap:16px}.brand{font-size:18px;gap:6px}.brand-logo{width:26px;height:26px}.header-nav{margin-left:auto;gap:16px;font-size:13px}.header-nav .nav-secondary,.header-actions{display:none}.hero{padding-top:48px}.hero-copy{padding-bottom:28px}.hero h1{font-size:42px;line-height:1.3;letter-spacing:-.02em;max-width:440px;margin-top:16px}.hero h1 span{display:block}.hero-description{font-size:16px;line-height:1.8;margin-top:20px}.hero-actions{margin-top:24px;gap:10px}.button{padding:10px 14px;font-size:13px}.hero-meta{font-size:10px;line-height:1.8;margin-top:20px}.hero-demo,.demo{padding:8px}.window-bar{height:24px;grid-template-columns:50px 1fr 50px;margin-bottom:6px;font-size:10px}.window-mark{font-size:9px}.window-dots{gap:4px}.window-dots i{width:5px;height:5px}.demo figcaption{padding-top:6px;font-size:11px;gap:8px}.demo-actions{gap:12px}.toggle-video,.expand-video{font-size:11px;min-height:44px}.hero-footnote{font-size:12px;margin-top:12px}.features{padding-top:64px}.features-intro{display:block;margin-bottom:24px}.features-intro .editorial{max-width:100%;font-size:17px;margin-top:20px}.section-heading{font-size:30px;line-height:1.4;margin-top:12px}.feature-toc{gap:22px}.feature-toc a{padding:15px 2px 14px;font-size:12px;line-height:21px}.feature-content{padding-top:48px}.feature{margin-bottom:64px;gap:24px}.feature-text{padding:0}.feature h3{font-size:30px;line-height:1.35}.feature-lead{font-size:18px;margin-top:14px}.feature-copy{font-size:15px;line-height:1.9;margin-top:18px}.feature-points{font-size:13px;margin-top:18px}.feature-note{font-size:12px}.start-section,.faq{padding-top:64px}.start-heading h2,.faq h2{font-size:30px;line-height:1.4}.getting-started{grid-template-columns:1fr;gap:12px}.start-step{padding:24px}.start-step h3{margin-top:24px;font-size:22px}.start-step p{font-size:14px}.faq-list summary{font-size:15px}.faq-list details p{font-size:14px}.closing{margin-top:64px;padding:44px 0}.closing h2{font-size:30px;line-height:1.4}.closing p{font-size:15px}.closing-actions{gap:10px}.footer-intro{align-items:flex-start;margin-bottom:30px}.footer-intro>p{font-size:15px}.footer-columns{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 20px}.footer-column a{font-size:13px}.footer-bottom{margin-top:36px}.video-dialog{width:calc(100vw - 24px);max-height:calc(100dvh - 24px)}.dialog-bar{padding:8px 12px}.dialog-title{font-size:13px}.dialog-caption{font-size:12px;padding:10px 12px}.video-error{padding:12px;font-size:14px}.video-error p{font-size:12px}.retry-video{margin-top:10px}}
+@media(max-width:1100px){.header-nav{gap:20px}.header-actions>.text-link{display:none}.feature{gap:36px}.feature h3{font-size:30px}.feature-copy{font-size:14px}.feature-toc{gap:20px}.hero h1{font-size:60px}.hero-demo .record-caption{display:none}.closing-inner{align-items:flex-start}.closing h2{font-size:34px}.closing-actions{flex-direction:column;align-items:stretch}}
+@media(max-width:900px){.feature,.feature:nth-child(even){grid-template-columns:minmax(0,1fr);gap:28px;align-items:start}.feature:nth-child(even)>.feature-text,.feature:nth-child(even)>.demo{grid-column:auto;grid-row:auto}.feature-text{max-width:740px}.feature h3{font-size:30px}.feature-copy{font-size:16px;max-width:620px}.feature-note{font-size:13px;max-width:620px}.features-intro{align-items:flex-start}.features-intro .editorial{max-width:270px;font-size:17px}.section-heading{font-size:32px}.feature-content{padding-top:56px}.feature{margin-bottom:72px}.faq{grid-template-columns:minmax(0,1fr);gap:32px}.faq h2 br{display:none}.faq-heading>p:last-child{margin-top:12px}.start-heading>p{display:none}.start-step{padding:24px}.start-step h3{font-size:20px;margin-top:28px}.closing-inner{display:block}.closing-actions{margin-top:28px;flex-direction:row}.header-nav{gap:18px}.header-actions{gap:0}.hero{padding-top:56px}.hero h1{font-size:56px}.hero-description{font-size:17px}.features{padding-top:80px}.start-section,.faq{padding-top:80px}.closing{margin-top:80px}}
+@media(max-width:620px){:root{--header-height:56px;--toc-height:52px}.wrap{width:calc(100% - 40px)}.header-inner{gap:16px}.brand{font-size:18px;gap:6px}.brand-logo{width:26px;height:26px}.header-nav{margin-left:auto;gap:16px;font-size:13px}.header-nav .nav-secondary,.header-actions{display:none}.hero{padding-top:48px}.hero-copy{padding-bottom:28px}.hero h1{font-size:42px;line-height:1.3;letter-spacing:-.02em;max-width:440px;margin-top:16px}.hero h1 span{display:block}.hero-description{font-size:16px;line-height:1.8;margin-top:20px}.hero-actions{margin-top:24px;gap:10px}.button{padding:10px 14px;font-size:13px}.hero-meta{font-size:10px;line-height:1.8;margin-top:20px}.hero-demo,.demo{padding:8px}.window-bar{height:24px;grid-template-columns:50px 1fr 50px;margin-bottom:6px;font-size:10px}.window-mark{font-size:9px}.window-dots{gap:4px}.window-dots i{width:5px;height:5px}.demo figcaption{padding-top:6px;font-size:11px;gap:8px}.demo-actions{gap:12px}.toggle-video,.expand-video{font-size:11px;min-height:44px}.hero-footnote{font-size:12px;margin-top:12px}.features{padding-top:64px}.features-intro{display:block;margin-bottom:24px}.features-intro .editorial{max-width:100%;font-size:17px;margin-top:20px}.section-heading{font-size:30px;line-height:1.4;margin-top:12px}.feature-toc{gap:22px}.feature-toc a{padding:15px 2px 14px;font-size:12px;line-height:21px}.feature-content{padding-top:48px}.feature{margin-bottom:56px;gap:20px}.feature-text{padding:0}.feature h3{font-size:28px;line-height:1.35}.feature-copy{font-size:15px;line-height:1.8;margin-top:12px}.feature-note{font-size:12px}.start-section,.faq{padding-top:64px}.start-heading h2,.faq h2{font-size:30px;line-height:1.4}.getting-started{grid-template-columns:1fr;gap:12px}.start-step{padding:24px}.start-step h3{margin-top:24px;font-size:22px}.start-step p{font-size:14px}.faq-list summary{font-size:15px}.faq-list details p{font-size:14px}.closing{margin-top:64px;padding:44px 0}.closing h2{font-size:30px;line-height:1.4}.closing p{font-size:15px}.closing-actions{gap:10px}.footer-intro{align-items:flex-start;margin-bottom:30px}.footer-intro>p{font-size:15px}.footer-columns{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 20px}.footer-column a{font-size:13px}.footer-bottom{margin-top:36px}.video-dialog{width:calc(100vw - 24px);max-height:calc(100dvh - 24px)}.dialog-bar{padding:8px 12px}.dialog-title{font-size:13px}.dialog-caption{font-size:12px;padding:10px 12px}.video-error{padding:12px;font-size:14px}.video-error p{font-size:12px}.retry-video{margin-top:10px}}
 @media(pointer:coarse){.toggle-video,.expand-video{min-height:44px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 @media print{.site-header,.feature-sidebar,.demo-actions,.video-dialog,.hero-actions,.closing-actions{display:none!important}.wrap{width:100%}.hero,.features{padding-top:24px}.feature,.feature:nth-child(even){display:block;margin-bottom:28px;break-inside:avoid}.feature .demo{margin-top:16px}.hero-demo{display:none}.feature-content{padding-top:24px}.feature-text{max-width:none}.faq{display:block}.footer-columns{display:none}body{background:var(--paper);color:var(--ink)}}
@@ -52,10 +52,9 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
   <div class="wrap features-intro"><div><p class="eyebrow">ONE WORKSPACE, CONTINUOUS WORK</p><h2 class="section-heading" id="features-title">从眼前的资料，<br>到真正完成的工作。</h2></div><p class="editorial">依据放在一起，过程看得清楚。<br>每次工作的结果，都能成为下一次的起点。</p></div>
   <aside class="feature-sidebar wrap" aria-label="功能目录"><nav class="feature-toc"><a href="#context" data-toc="context">上下文</a><a href="#trace" data-toc="trace">执行轨迹</a><a href="#planning" data-toc="planning">Todo 与日历</a><a href="#obsidian" data-toc="obsidian">Obsidian</a><a href="#agent" data-toc="agent">Agent</a><a href="#projects" data-toc="projects">项目</a><a href="#skills" data-toc="skills">Skills / MCP</a><a href="#memory" data-toc="memory">记忆</a><a href="#collaboration" data-toc="collaboration">子会话</a><a href="#explore" data-toc="explore">探索</a><a href="#coding" data-toc="coding">文件与终端</a></nav></aside>
   <div class="feature-content wrap"><section class="feature" id="context" aria-labelledby="title-context">
-  <div class="feature-text"><p class="eyebrow feature-number">01 / CONTEXT</p>
-<div class="feature-heading"><h3 id="title-context">万物上下文</h3><p class="feature-lead">文件、会话、待办，都能成为下一步的依据。</p></div>
-      <div class="feature-copy"><p>用 @ 引用文件、&amp; 引用会话、~ 引用 Todo 和日程，用 / 调用 Skill、# 选择 MCP。把具体资料带进问题，让 Agent 清楚这次工作依据什么。</p><p>在文档或回复里选中一段内容，可以带着来源继续追问。项目规则、附加目录、历史讨论与探索结果，也能参与下一步；长对话则通过占用提示与压缩继续整理。</p></div>
-      <ul class="feature-points"><li>文件、历史会话、Todo 与日程引用</li><li>选区引用、附加资料与项目规则</li><li>上下文占用、分界与长会话压缩</li></ul>
+  <div class="feature-text">
+    <h3 id="title-context">万物上下文</h3>
+    <p class="feature-copy">引用文件、会话、Todo 和日程，带上项目规则与选中内容继续追问。长对话可查看上下文占用，通过压缩继续工作。</p>
   </div>
 <figure class="demo" data-demo="context">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>上下文</span><span class="window-mark">SNAP</span></div>
@@ -67,12 +66,10 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
     </figure>
 </section>
 <section class="feature" id="trace" aria-labelledby="title-trace">
-  <div class="feature-text"><p class="eyebrow feature-number">02 / EXECUTION TRACE</p>
-<div class="feature-heading"><h3 id="title-trace">执行轨迹与 AI 说明</h3><p class="feature-lead">每一步做了什么，为什么做，都有迹可查。</p></div>
-      <div class="feature-copy"><p>输入、模型与工具分成三条泳道，沿着时间线查看一次任务怎样推进。可以搜索步骤、筛选异常，也可以打开概述、参数、结果、上下文、Schema 和计时，核对原始过程。</p><p>想进一步理解某一步时，打开 AI 说明。模型结合任务、公开操作与返回结果，用大白话解释做了什么、可能是为了什么；说明保留在步骤旁，原始证据也随时可看。</p></div>
-      <ul class="feature-points"><li>三泳道可视化、顺序与真实耗时</li><li>步骤搜索、异常筛选与六类详情</li><li>按需开启模型说明，成功结果缓存</li></ul>
-
-      <p class="feature-note">AI 说明默认关闭，产生额外模型用量；Agent 执行中排队。缺失字段标为未记录，AI 对目的的解释属于推测。</p>
+  <div class="feature-text">
+    <h3 id="title-trace">执行轨迹与 AI 说明</h3>
+    <p class="feature-copy">沿输入、模型与工具三条泳道查看步骤、耗时和原始结果。打开 AI 说明开关，按需调用模型解释公开操作。</p>
+    <p class="feature-note">AI 说明默认关闭，会产生额外模型用量；对目的的解释属于推测。</p>
   </div>
 <figure class="demo" data-demo="trace">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>执行轨迹</span><span class="window-mark">SNAP</span></div>
@@ -84,12 +81,10 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
     </figure>
 </section>
 <section class="feature" id="planning" aria-labelledby="title-planning">
-  <div class="feature-text"><p class="eyebrow feature-number">03 / PLANNING</p>
-<div class="feature-heading"><h3 id="title-planning">Todo / 日历 / 定时任务</h3><p class="feature-lead">下一步和下一次，都安排好。</p></div>
-      <div class="feature-copy"><p>把讨论中的后续动作放进 Todo，设置优先级、截止时间、项目和标签。需要开始工作时，从待办明确启动 Agent，并把执行会话关联回来。</p><p>用日历安排时间，用提醒跟进事项；对需要重复进行的工作，配置单次或周期任务，选择项目与模型，再从运行记录检查每次执行。</p></div>
-      <ul class="feature-points"><li>Todo 状态、优先级、截止时间与会话关联</li><li>日程安排与到期提醒</li><li>单次、每日、每周等周期任务与运行记录</li></ul>
-
-      <p class="feature-note">提醒与定时执行依赖本机 Snap 运行。</p>
+  <div class="feature-text">
+    <h3 id="title-planning">Todo / 日历 / 定时任务</h3>
+    <p class="feature-copy">把后续动作留在 Todo，按需启动 Agent。安排日程与提醒，配置单次或周期任务，再从运行记录检查结果。</p>
+    <p class="feature-note">提醒与定时执行依赖本机 Snap 运行。</p>
   </div>
 <figure class="demo" data-demo="planning">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>Todo 与日历</span><span class="window-mark">SNAP</span></div>
@@ -101,12 +96,10 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
     </figure>
 </section>
 <section class="feature" id="obsidian" aria-labelledby="title-obsidian">
-  <div class="feature-text"><p class="eyebrow feature-number">04 / KNOWLEDGE</p>
-<div class="feature-heading"><h3 id="title-obsidian">Obsidian</h3><p class="feature-lead">让知识回到你自己的 Markdown 文件里。</p></div>
-      <div class="feature-copy"><p>连接已有的 Obsidian Vault，在 Snap 里浏览文件树、创建笔记和目录，直接编辑原有 Markdown。资料、图片和双链继续留在熟悉的知识结构中。</p><p>授权之后，让 Agent 结合笔记工作，也可以将研究和任务成果写回知识库。会话里的阶段性结论，逐渐变成下一次能用上的资料。</p></div>
-      <ul class="feature-points"><li>连接已有 Vault，浏览与创建笔记</li><li>Markdown 编辑、图片与双链</li><li>授权 Agent 读取与写入知识库</li></ul>
-
-      <p class="feature-note">支持 Markdown 文件工作流；不包含完整的 Obsidian 插件体系。</p>
+  <div class="feature-text">
+    <h3 id="title-obsidian">Obsidian</h3>
+    <p class="feature-copy">连接已有 Vault，浏览、创建和编辑 Markdown。授权 Agent 参考笔记，把研究与任务成果写回知识库。</p>
+    <p class="feature-note">基于 Markdown 文件，不包含完整的 Obsidian 插件体系。</p>
   </div>
 <figure class="demo" data-demo="obsidian">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>Obsidian</span><span class="window-mark">SNAP</span></div>
@@ -118,10 +111,9 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
     </figure>
 </section>
 <section class="feature" id="agent" aria-labelledby="title-agent">
-  <div class="feature-text"><p class="eyebrow feature-number">05 / AGENT</p>
-<div class="feature-heading"><h3 id="title-agent">Agent 能力</h3><p class="feature-lead">把任务交给 AI，一起把事情做完。</p></div>
-      <div class="feature-copy"><p>用自然语言交代目标，Snap 结合模型、文件与工具推进任务。你可以先讨论思路，再进入执行；也可以先让它研究并写出计划，确认之后继续。</p><p>执行过程持续呈现在会话里。需要补充要求、回答问题、暂停或检查产物时，你始终可以参与进来。</p></div>
-      <ul class="feature-points"><li>Chat 与 Agent，已有讨论可以迁移后继续</li><li>计划、权限确认、消息排队、停止与重试</li><li>流式回复、工具过程与任务产物</li></ul>
+  <div class="feature-text">
+    <h3 id="title-agent">Agent 能力</h3>
+    <p class="feature-copy">交代目标，先讨论或制定计划，再推进执行。过程中可补充要求、暂停任务，并检查文件与产物。</p>
   </div>
 <figure class="demo" data-demo="agent">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>Agent</span><span class="window-mark">SNAP</span></div>
@@ -133,10 +125,9 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
     </figure>
 </section>
 <section class="feature" id="projects" aria-labelledby="title-projects">
-  <div class="feature-text"><p class="eyebrow feature-number">06 / PROJECTS</p>
-<div class="feature-heading"><h3 id="title-projects">项目管理</h3><p class="feature-lead">每一份工作，都有自己的空间。</p></div>
-      <div class="feature-copy"><p>把同一份工作的会话、资料、规则和工具放进一个项目。连接已有的本地目录，或从新项目开始，研究、写作和开发都有清晰的归属。</p><p>项目事实和长期约定可以持续积累；某次任务的附件与讨论则留在会话里。下一次继续工作时，从已经准备好的项目环境出发。</p></div>
-      <ul class="feature-points"><li>连接已有目录，或创建新的项目</li><li>项目与会话分别组织附件和资料</li><li>按项目管理规则、记忆、Skills 与 MCP</li></ul>
+  <div class="feature-text">
+    <h3 id="title-projects">项目管理</h3>
+    <p class="feature-copy">将会话、资料、规则和工具放进同一个项目。连接本地目录，从准备好的环境继续研究、写作或开发。</p>
   </div>
 <figure class="demo" data-demo="projects">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>项目</span><span class="window-mark">SNAP</span></div>
@@ -148,12 +139,10 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
     </figure>
 </section>
 <section class="feature" id="skills" aria-labelledby="title-skills">
-  <div class="feature-text"><p class="eyebrow feature-number">07 / SKILLS & TOOLS</p>
-<div class="feature-heading"><h3 id="title-skills">Skills 与 MCP</h3><p class="feature-lead">把常用方法，变成随时可用的能力。</p></div>
-      <div class="feature-copy"><p>把重复使用的工作方法整理成 Skill，在需要的时候直接调用。研究资料、处理文档、运行脚本，都可以沿用熟悉的步骤和交付要求。</p><p>通过 MCP 连接外部工具与服务，通过 CLI 使用本机已有的命令行能力。不同项目可以选择各自需要的工具，让每次任务带着合适的能力开始。</p></div>
-      <ul class="feature-points"><li>Skills 启停、导入、更新与文件编辑</li><li>MCP 服务器配置、连接验证与工具列表</li><li>按项目配置命令行集成</li></ul>
-
-      <p class="feature-note">外部工具需具备相应依赖、账号与访问权限。</p>
+  <div class="feature-text">
+    <h3 id="title-skills">Skills 与 MCP</h3>
+    <p class="feature-copy">用 Skill 复用常用方法，通过 MCP 连接工具与服务，也能使用本机 CLI。按项目配置任务需要的能力。</p>
+    <p class="feature-note">外部工具需具备相应依赖、账号与访问权限。</p>
   </div>
 <figure class="demo" data-demo="skills">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>Skills / MCP</span><span class="window-mark">SNAP</span></div>
@@ -165,10 +154,9 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
     </figure>
 </section>
 <section class="feature" id="memory" aria-labelledby="title-memory">
-  <div class="feature-text"><p class="eyebrow feature-number">08 / MEMORY</p>
-<div class="feature-heading"><h3 id="title-memory">项目记忆</h3><p class="feature-lead">把重要约定，留给下一次。</p></div>
-      <div class="feature-copy"><p>写作偏好、项目背景、工作中的约定，可以留在可查看、可修改的记忆文件里。比起每次重新解释，从共同积累的背景继续更自然。</p><p>Snap 将协作规则与长期记忆分开组织，支持 MEMORY.md 和主题文件。记忆有变化时可以回顾，哪些内容需要保留，由你来判断。</p></div>
-      <ul class="feature-points"><li>项目规则与记忆分别管理</li><li>直接查看和编辑记忆内容</li><li>记忆变更提示与会话回顾入口</li></ul>
+  <div class="feature-text">
+    <h3 id="title-memory">项目记忆</h3>
+    <p class="feature-copy">将偏好、背景和长期约定留在可查看、可编辑的记忆文件中。规则与记忆分别管理，继续工作时少些重复解释。</p>
   </div>
 <figure class="demo" data-demo="memory">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>记忆</span><span class="window-mark">SNAP</span></div>
@@ -180,10 +168,9 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
     </figure>
 </section>
 <section class="feature" id="collaboration" aria-labelledby="title-collaboration">
-  <div class="feature-text"><p class="eyebrow feature-number">09 / COLLABORATION</p>
-<div class="feature-heading"><h3 id="title-collaboration">子会话与主会话</h3><p class="feature-lead">把一个大任务，交给几个明确的角色。</p></div>
-      <div class="feature-copy"><p>把资料研究、方案审阅、代码检查等工作拆成独立子任务。主会话保留整体目标，子会话围绕明确的角色、问题和交付要求开展工作。</p><p>父子关系与运行状态可以追踪。收到结论后，继续跟进原来的子会话，让复审与修改沿着已有成果推进。</p></div>
-      <ul class="feature-points"><li>为子任务指定角色、目标与交付要求</li><li>查看父子会话关系与运行状态</li><li>继续已完成或已中断的子会话</li></ul>
+  <div class="feature-text">
+    <h3 id="title-collaboration">子会话与主会话</h3>
+    <p class="feature-copy">将研究、审阅和检查拆成子任务，追踪会话关系与运行状态。收到结论后，继续原来的子会话跟进修改。</p>
   </div>
 <figure class="demo" data-demo="collaboration">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>子会话</span><span class="window-mark">SNAP</span></div>
@@ -195,12 +182,10 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
     </figure>
 </section>
 <section class="feature" id="explore" aria-labelledby="title-explore">
-  <div class="feature-text"><p class="eyebrow feature-number">10 / EXPLORATION</p>
-<div class="feature-heading"><h3 id="title-explore">探索能力</h3><p class="feature-lead">想岔开研究一下，随时另开一条思路。</p></div>
-      <div class="feature-copy"><p>从某条回复开始探索，继承截至这条回复的上下文，单独追问一个假设、一处风险或另一种解法。主任务依然保持原来的讨论节奏。</p><p>探索中出现值得保留的结论，可以通过引用带回主会话。你可以先把问题想清楚，再决定哪些内容进入下一步。</p></div>
-      <ul class="feature-points"><li>从选定回复创建探索会话</li><li>继承分叉前的上下文，展开旁支讨论</li><li>将探索引用带回主会话</li></ul>
-
-      <p class="feature-note">带回的是探索引用；文件修改仍需单独检查。</p>
+  <div class="feature-text">
+    <h3 id="title-explore">探索能力</h3>
+    <p class="feature-copy">从选定回复另开探索，继承分叉前的上下文，研究其他假设与解法。将有用结论引用回主会话，继续推进。</p>
+    <p class="feature-note">带回探索引用，不自动合并文件修改。</p>
   </div>
 <figure class="demo" data-demo="explore">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>探索</span><span class="window-mark">SNAP</span></div>
@@ -212,12 +197,10 @@ footer{padding:48px 0 28px}.footer-intro{display:flex;justify-content:space-betw
     </figure>
 </section>
 <section class="feature" id="coding" aria-labelledby="title-coding">
-  <div class="feature-text"><p class="eyebrow feature-number">11 / WORKSPACE</p>
-<div class="feature-heading"><h3 id="title-coding">文件、改动与终端</h3><p class="feature-lead">边做边看，把交付物放在眼前。</p></div>
-      <div class="feature-copy"><p>文件树和预览就在任务旁边，文档、代码和产物可以随时打开检查。Markdown、PDF 与 Office 文件的预览，让讨论和阅读留在同一个工作环境。</p><p>修改代码时查看 Git Diff，在已授权仓库中选择 worktree；需要运行、调试或启动服务时，打开可见终端继续。写了什么、改了哪里、运行结果怎样，都有直接入口。</p></div>
-      <ul class="feature-points"><li>文件树、文档预览与选区引用</li><li>代码编辑、Git 改动与 worktree</li><li>可见终端与本机命令执行</li></ul>
-
-      <p class="feature-note">Office 以预览和内容提取为主；复杂格式需回到原应用核对。</p>
+  <div class="feature-text">
+    <h3 id="title-coding">文件、改动与终端</h3>
+    <p class="feature-copy">在任务旁预览文件、检查 Git 改动，通过 worktree 隔离代码任务。打开可见终端运行或调试，随时检查产物。</p>
+    <p class="feature-note">Office 以预览和内容提取为主，复杂格式需回到原应用核对。</p>
   </div>
 <figure class="demo" data-demo="coding">
       <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>文件与终端</span><span class="window-mark">SNAP</span></div>
