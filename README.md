@@ -34,6 +34,3 @@ python3 -m http.server 8000
 
 GitHub Pages 使用 `main` 分支的根目录 `/`。推送更新后会自动重新发布。分享或移动页面时请保留 HTML 与 `assets/` 的相对位置。
 
-## 来源与许可
-
-Snap 基于 [Proma](https://github.com/proma-ai/Proma)。来源和许可见 [NOTICE](NOTICE)、[LICENSE](LICENSE)；Inter 字体许可见 [OFL](assets/fonts/LICENSE-Inter.txt)。
